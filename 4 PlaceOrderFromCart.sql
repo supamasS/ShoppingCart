@@ -15,7 +15,8 @@ BEGIN
 	DECLARE order_number INT(11);
     DECLARE customer_number INT(11);
     
-	DECLARE cur1 CURSOR FOR SELECT productCode, quantityAdded, priceEach, cartLineNumber FROM `cartdetails` 
+	DECLARE cur1 CURSOR FOR SELECT productCode, quantityAdded, priceEach, cartLineNumber 
+		FROM `cartdetails` 
 		WHERE cartdetails.cartNumber=cart_number;
 	DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
     

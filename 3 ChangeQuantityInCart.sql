@@ -13,6 +13,6 @@ BEGIN
 END $$
 DELIMITER ;
 
-CALL ChangeQuantityInCart(10100, 'S18_2248', 111);
+CALL ChangeQuantityInCart(10100, 'S50_1392', 111);
 
 SELECT * from cartdetails;

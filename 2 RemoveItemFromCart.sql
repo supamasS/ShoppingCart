@@ -12,6 +12,6 @@ BEGIN
 END $$
 DELIMITER ;
 
-CALL RemoveItemFromCart(10100, 'S18_1749');
+CALL RemoveItemFromCart(10100, 'S18_2248');
 
 SELECT * from cartdetails;
